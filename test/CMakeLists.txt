@@ -1,9 +1,9 @@
  cmake_minimum_required(VERSION 3.5)
 
- project(test)
+ project(tests)
 
- add_executable(test matrix_test.cpp)
+ add_executable(tests matrix_test.cpp)
 
- target_include_directories(test PRIVATE ../lib/include)
+ target_include_directories(tests PRIVATE ../lib/include)
 
- target_link_libraries(test PRIVATE GTest::gtest_main)
+ target_link_libraries(tests PRIVATE GTest::gtest_main)
