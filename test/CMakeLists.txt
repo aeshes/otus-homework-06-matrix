@@ -2,8 +2,8 @@
 
  project(tests)
 
- add_executable(tests matrix_test.cpp)
+ add_executable(matrix matrix_test.cpp)
 
- target_include_directories(tests PRIVATE ../lib/include)
+ target_include_directories(matrix PRIVATE ../lib/include)
 
- target_link_libraries(tests PRIVATE GTest::gtest_main)
+ target_link_libraries(matrix PRIVATE GTest::gtest_main)
